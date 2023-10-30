@@ -146,6 +146,7 @@
         background: rgb(72, 83, 96);
         display: flex;
         align-items: center;
+        flex-shrink: 0;
       }
       .header_logo {
         padding-left: 45px;
@@ -181,7 +182,7 @@
 
       .search {
         margin-left: 15px;
-        width: 798px;
+        width: 100%;
         padding: 10px;
         font-size: 14px;
         border-radius: 4px;
@@ -193,8 +194,19 @@
         transform-origin: right center;
         transition: transform 0.44s ease 0s;
       }
+
+      .search_with_icon {
+        position: relative;
+        flex-grow: 1;
+      }
+      .searchicon {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        
+      }
       .create {
-        margin-left: 15px;
+        margin-left: 60px;
         border: none;
         padding: 10px 20px;
         color: rgb(255, 255, 255);
@@ -208,6 +220,7 @@
         justify-content: center;
         cursor: pointer;
         gap: 5px;
+        
       }
 
       .create:hover, .create:focus, .create:active {
@@ -234,6 +247,7 @@
       .sign_out:hover, .sign_out:focus, .sign_out:active {
         opacity: 45%;
       }
+      
     </style>
   </head>
   <body>
@@ -304,15 +318,19 @@
           </li>
         </ul>
       </nav>
+      <div class="search_with_icon">
 
-      <input
-        type="text"
-        class="search"
-        placeholder="Enter employee name or whatever"
-        spellcheck="false"
-        autocomplete="off"
-        value=""
-      />
+        <input
+          type="text"
+          class="search"
+          placeholder="Enter employee name or whatever"
+          spellcheck="false"
+          autocomplete="off"
+          value=""
+        />
+        <img src="./SVG/SearchIcon.png" alt="searchIcon" class="searchicon">
+      </div>
+      
       <button class="create" type="button">
         <svg
           width="11"
