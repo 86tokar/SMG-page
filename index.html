@@ -284,7 +284,6 @@
         display: block;
         width: 100%;
         text-overflow: ellipsis;
-       
       }
 
       .filled {
@@ -317,10 +316,26 @@
         color: #fff;
         font-size: 16px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 10px;
-     
       }
+
+      .item {
+        font-weight: 700;
+      }
+
+      .employee-name {
+        margin-top: 9px;
+        font-size: 24px;
+      }
+      .item-text {
+        font-weight: 400;
+        margin-left: 5px;
+        white-space: nowrap;
+        color: white;
+        text-decoration: none;
+      }
+      
     </style>
   </head>
   <body>
@@ -450,21 +465,23 @@
           </div>
           <div class="col">
             <div class="item">
-              <img src="/Assets/icons/profile/department-icon.svg" />
+              <img
+                src="./SVG/department-icon.svg
+              "
+              />
               <span class="item-text">LT.DIV1.D2.G2.T3</span>
             </div>
             <div class="item" style="margin-top: 12px; line-height: 24px">
-              <img src="/Assets/icons/ic_location.svg" />
+              <img src="./SVG/ic_location.svg"/>
               <a
                 id="wspLink"
-                href="https://wsp.ventionteams.com"
+                href="./SVG/"
                 target="_blank"
                 style="text-decoration: none"
                 rel="noopener noreferrer nofollow"
               >
                 <span
-                  class="item-text workplace-title"
-                  id="profile-header-office"
+                  class="item-text"
                 >
                   Vilnius | U23
                 </span>
@@ -473,21 +490,21 @@
           </div>
           <div class="col">
             <div class="item">
-              <img src="/Assets/icons/profile/email-icon.svg" />
+              <img src="./SVG/email-icon.svg" />
               <span class="item-text email-title email">
                 <a
                   href="mailto:Aliaksei.Tokar@ventionteams.com"
-                  rel="noopener noreferrer nofollow"
+                   class="item-text"
                   >Aliaksei.Tokar@ventionteams.com</a
                 >
               </span>
             </div>
-            <div class="item">
-              <img src="/Assets/icons/profile/skype-icon.svg" />
+            <div class="item" style="margin-top: 12px; line-height: 24px">
+              <img src="./SVG/skype-icon.svg" />
               <span class="item-text skype-title">
                 <a
                   href="skype:live:alexey.tokar.blr?chat"
-                  rel="noopener noreferrer nofollow"
+                  class="item-text skype-title"
                   >live:alexey.tokar.blr</a
                 >
               </span>
