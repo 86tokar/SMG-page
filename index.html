@@ -116,6 +116,7 @@
       }
       html {
         height: 100%;
+        background-color: #f7f7f7; ;
       }
       body {
         line-height: 1;
@@ -346,7 +347,6 @@
         gap: 50px;
         padding: 20px 15px;
         margin-left: 140px;
-        
       }
       .photo {
         position: absolute;
@@ -366,7 +366,88 @@
       .conlink:focus,
       .conlink:active {
         opacity: 45%;
-        color:  rgba(81, 172, 174, 1);
+        color: rgba(81, 172, 174, 1);
+      }
+
+      .overflow {
+        overflow-y: scroll;
+      }
+
+      .gaonutosal {
+        float: left;
+        width: 37%;
+        padding: 0 1em;
+      }
+      .pesontedan {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .pesontedan input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      .pesontedan label {
+        position: relative;
+        display: block;
+        padding: 0 0 0 2.5em;
+        background: white;
+        line-height: 3;
+        cursor: pointer;
+        color: black;
+        font-size: 17px;
+      }
+
+      .pesontedan-content {
+        max-height: 0;
+        overflow: hidden;
+        background-color: white;
+        transition: max-height 0.4s;
+        font-size: 14px;
+        background-color: #fffdfd;
+        font: black;
+      }
+      .label:hover {
+        background-color:#ceeaea;
+      }  
+      
+      
+      .pesontedan-content p {
+        margin: 2em;
+      }
+      /* :checked */
+      .pesontedan input:checked ~ .pesontedan-content {
+        max-height: 100vh;
+      }
+
+      /* Icon */
+      .pesontedan label::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3;
+        text-align: center;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+      }
+      .pesontedan input[type="checkbox"] + label::after {
+        content: "+";
+      }
+      .pesontedan input[type="radio"] + label::after {
+        content: "\25BC";
+      }
+      .pesontedan input[type="checkbox"]:checked + label::after {
+        transform: rotate(315deg);
+      }
+      .pesontedan input[type="radio"]:checked + label::after {
+        transform: rotateX(180deg);
       }
     </style>
   </head>
@@ -548,13 +629,19 @@
               </a>
             </li>
             <li class="active">
-              <a href="#!" style="text-decoration: none" class="conlink"> OOO Requests </a>
+              <a href="#!" style="text-decoration: none" class="conlink">
+                OOO Requests
+              </a>
             </li>
             <li class="active">
-              <a href="#!" style="text-decoration: none" class="conlink"> Projects </a>
+              <a href="#!" style="text-decoration: none" class="conlink">
+                Projects
+              </a>
             </li>
             <li class="active">
-              <a href="#!" style="text-decoration: none" class="conlink"> Time Tracking </a>
+              <a href="#!" style="text-decoration: none" class="conlink">
+                Time Tracking
+              </a>
             </li>
             <li class="active">
               <a href="#!" style="text-decoration: none" class="conlink">
@@ -571,6 +658,46 @@
           height="100"
           class="photo"
         />
+
+        <div class="overflow">
+          <div class="navigaonusing">
+            <div class="pesontedan">
+              <input id="pesontedan-one" type="checkbox" name="pesontedans" />
+              <label for="pesontedan-one" class="label">General Information</label>
+              <div class="pesontedan-content">
+                <p>Первое описание</p>
+              </div>
+            </div>
+            <div class="pesontedan">
+              <input id="pesontedan-two" type="checkbox" name="pesontedans" />
+              <label for="pesontedan-two" class="label">Corporate Information</label>
+              <div class="pesontedan-content">
+                <p>Второй мануал</p>
+              </div>
+            </div>
+            <div class="pesontedan">
+              <input id="Contacts" type="checkbox" name="pesontedans" />
+              <label for="Contacts" class="label">Contacts</label>
+              <div class="pesontedan-content">
+                <p>Третье описание по материалу</p>
+              </div>
+            </div>
+            <div class="pesontedan">
+              <input id="Education" type="checkbox" name="pesontedans" />
+              <label for="Education" class="label">Education</label>
+              <div class="pesontedan-content">
+                <p>Третье описание по материалу</p>
+              </div>
+            </div>
+            <div class="pesontedan">
+              <input id="Settings" type="checkbox" name="pesontedans" />
+              <label for="Settings" class="label">Settings</label>
+              <div class="pesontedan-content">
+                <p>Третье описание по материалу</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
