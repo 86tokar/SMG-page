@@ -116,7 +116,7 @@
       }
       html {
         height: 100%;
-        background-color: #f7f7f7; ;
+        background-color: #f7f7f7;
       }
       body {
         line-height: 1;
@@ -385,7 +385,7 @@
         overflow: hidden;
       }
 
-      .pesontedan input {
+      .pesontedan input[type="checkbox"] {
         position: absolute;
         opacity: 0;
         z-index: -1;
@@ -404,6 +404,7 @@
 
       .pesontedan-content {
         max-height: 0;
+        display: none;
         overflow: hidden;
         background-color: white;
         transition: max-height 0.4s;
@@ -411,17 +412,16 @@
         font: black;
       }
       .label:hover {
-        background-color:#ceeaea;
-       
-      }  
-      
-      
+        background-color: #ceeaea;
+      }
+
       .pesontedan-content p {
         margin: 2em;
       }
       /* :checked */
       .pesontedan input:checked ~ .pesontedan-content {
         max-height: 100vh;
+        display: block;
       }
 
       /* Icon */
@@ -449,6 +449,21 @@
       }
       .pesontedan input[type="radio"]:checked + label::after {
         transform: rotateX(180deg);
+      }
+
+      .info-input {
+        width: 305px;
+        height: 25px;
+        text-overflow: ellipsis;
+        border-color: #e4e4e6;
+        background-color: #fffefe;
+      }
+
+      .input_wrapper {
+        display: flex;
+        padding: 2em;
+        gap: 50px;
+        
       }
     </style>
   </head>
@@ -570,11 +585,11 @@
 
         <div class="summary-info">
           <img
-          src="./Aliaksei.Tokar.png"
-          alt="Alex"
-          width="100"
-          height="100"
-          class="photo"
+            src="./Aliaksei.Tokar.png"
+            alt="Alex"
+            width="100"
+            height="100"
+            class="photo"
           />
           <div class="col">
             <div class="item">
@@ -659,20 +674,27 @@
           </ul>
         </div>
 
-        
-
         <div class="overflow">
           <div class="navigaonusing">
             <div class="pesontedan">
               <input id="pesontedan-one" type="checkbox" name="pesontedans" />
-              <label for="pesontedan-one" class="label">General Information</label>
+              <label for="pesontedan-one" class="label"
+                >General Information</label
+              >
               <div class="pesontedan-content">
-                  
+                <div class="input_wrapper">
+                  <input class="info-input" type="text" />
+                  <input class="info-input" type="text" />
+                  <input class="info-input" type="text" />
+                  <input class="info-input" type="text" />
+                </div>
               </div>
             </div>
             <div class="pesontedan">
               <input id="pesontedan-two" type="checkbox" name="pesontedans" />
-              <label for="pesontedan-two" class="label">Corporate Information</label>
+              <label for="pesontedan-two" class="label"
+                >Corporate Information</label
+              >
               <div class="pesontedan-content">
                 <p>Второй мануал</p>
               </div>
@@ -681,9 +703,7 @@
               <input id="Contacts" type="checkbox" name="pesontedans" />
               <label for="Contacts" class="label">Contacts</label>
               <div class="pesontedan-content">
-                <div class="contacts_field_collection">
-                  
-                </div>
+                <div class="contacts_field_collection"></div>
               </div>
             </div>
             <div class="pesontedan">
