@@ -369,11 +369,14 @@
         opacity: 45%;
         color: rgba(81, 172, 174, 1);
       }
-
+      .overflowparent {
+        height: 500px;
+        overflow-y: auto;
+      }
       .overflow {
-        
         border: solid 1px #dbdbdd;
-        overflow-y: scroll;
+        
+       
       }
 
       .gaonutosal {
@@ -687,150 +690,152 @@
             </li>
           </ul>
         </div>
+        <div class="overflowparent">
 
-        <div class="overflow">
-          <div class="navigaonusing">
-            <div class="pesontedan">
-              <input id="pesontedan-one" type="checkbox" name="pesontedans" />
-              <label for="pesontedan-one" class="label"
-                >General Information</label
-              >
-              <div class="pesontedan-content">
-                <div class="input_wrapper">
-                  <div>
-                    <span class="required">Last name (en)</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">First name (en)</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Gender</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Birthday (dd/mm/yyyy)</span> <br />
-                    <input class="info-input" type="date" id="Rank" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pesontedan">
-              <input id="pesontedan-two" type="checkbox" name="pesontedans" />
-              <label for="pesontedan-two" class="label"
-                >Corporate Information</label
-              >
-              <div class="pesontedan-content">
-                <div class="input_wrapper">
-                  <div>
-                    <span class="required">Rank</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Organization</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Unit</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Location</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Workplace</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Employee contract office</span>
-                    <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Employment type</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Responsible HRM</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">ERP Key</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
+          <div class="overflow">
+            <div class="navigaonusing">
+              <div class="pesontedan">
+                <input id="pesontedan-one" type="checkbox" name="pesontedans" />
+                <label for="pesontedan-one" class="label"
+                  >General Information</label
+                >
+                <div class="pesontedan-content">
+                  <div class="input_wrapper">
+                    <div>
+                      <span class="required">Last name (en)</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">First name (en)</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Gender</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Birthday (dd/mm/yyyy)</span> <br />
+                      <input class="info-input" type="date" id="Rank" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="pesontedan">
-              <input id="Contacts" type="checkbox" name="pesontedans" />
-              <label for="Contacts" class="label">Contacts</label>
-              <div class="pesontedan-content">
-                <div class="input_wrapper">
-                  <div>
-                    <span class="required">Email</span> <br />
-                    <input class="info-input" type="email" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Phone</span> <br />
-                    <input class="info-input" type="number" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Skype</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Telegram</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Emergency information</span> <br />
-                    <textarea name="message" class="textarea"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pesontedan">
-              <input id="Education" type="checkbox" name="pesontedans" />
-              <label for="Education" class="label">Education</label>
-              <div class="pesontedan-content">
-                <div class="input_wrapper">
-                  <div>
-                    <span class="required">Institution</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Faculty</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Major</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Graduation year</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
-                  </div>
-                  <div>
-                    <span class="required">Job assignment</span> <br />
-                    <input class="info-input" type="text" id="Rank" />
+              <div class="pesontedan">
+                <input id="pesontedan-two" type="checkbox" name="pesontedans" />
+                <label for="pesontedan-two" class="label"
+                  >Corporate Information</label
+                >
+                <div class="pesontedan-content">
+                  <div class="input_wrapper">
+                    <div>
+                      <span class="required">Rank</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Organization</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Unit</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Location</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Workplace</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Employee contract office</span>
+                      <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Employment type</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Responsible HRM</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">ERP Key</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="pesontedan">
-              <input id="Settings" type="checkbox" name="pesontedans" />
-              <label for="Settings" class="label">Settings</label>
-              <div class="pesontedan-content">
-                <div class="input_wrapper">
-                  <div>
-                    <span class="required">Date format</span> <br />
-                    <input class="info-input" type="date" id="Rank" />
+              <div class="pesontedan">
+                <input id="Contacts" type="checkbox" name="pesontedans" />
+                <label for="Contacts" class="label">Contacts</label>
+                <div class="pesontedan-content">
+                  <div class="input_wrapper">
+                    <div>
+                      <span class="required">Email</span> <br />
+                      <input class="info-input" type="email" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Phone</span> <br />
+                      <input class="info-input" type="number" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Skype</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Telegram</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Emergency information</span> <br />
+                      <textarea name="message" class="textarea"></textarea>
+                    </div>
                   </div>
-                  <div>
-                    <span class="required">Time format</span> <br />
-                    <input class="info-input" type="time" id="Rank" />
+                </div>
+              </div>
+              <div class="pesontedan">
+                <input id="Education" type="checkbox" name="pesontedans" />
+                <label for="Education" class="label">Education</label>
+                <div class="pesontedan-content">
+                  <div class="input_wrapper">
+                    <div>
+                      <span class="required">Institution</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Faculty</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Major</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Graduation year</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Job assignment</span> <br />
+                      <input class="info-input" type="text" id="Rank" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pesontedan">
+                <input id="Settings" type="checkbox" name="pesontedans" />
+                <label for="Settings" class="label">Settings</label>
+                <div class="pesontedan-content">
+                  <div class="input_wrapper">
+                    <div>
+                      <span class="required">Date format</span> <br />
+                      <input class="info-input" type="date" id="Rank" />
+                    </div>
+                    <div>
+                      <span class="required">Time format</span> <br />
+                      <input class="info-input" type="time" id="Rank" />
+                    </div>
                   </div>
                 </div>
               </div>
